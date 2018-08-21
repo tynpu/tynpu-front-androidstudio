@@ -1,0 +1,89 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#282828"
+    android:id="@+id/lect1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/img_foodpro"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/pizza_pic"
+        app:siBorderColor="@color/white"
+        app:siBorderWidth="3dp"
+        app:siRadius="6dp"
+        app:siSquare="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/img_foodpro">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_productname"
+            android:layout_marginTop="10dp"
+            android:text="All Pizza"
+            android:textColor="#fff"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_productname"
+            android:id="@+id/tv_subproduct"
+            android:text="Thanks giving dinner"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_rec_black"
+            android:layout_below="@+id/tv_subproduct"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="#fff"
+               android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_dollarsign"
+                android:textSize="7pt"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="555"
+                android:textColor="#fff"
+                android:layout_toRightOf="@+id/tv_dollarsign"
+                android:layout_centerVertical="true"
+                android:id="@+id/foodprice"
+                android:layout_marginLeft="10dp"
+                android:textSize="7pt"
+                />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right_arrow_orange"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

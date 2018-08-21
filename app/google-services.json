@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "968251524550",
+    "firebase_url": "https://tynpu-192205.firebaseio.com",
+    "project_id": "tynpu-192205",
+    "storage_bucket": "tynpu-192205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968251524550:android:bbfd68e371d86f1a",
+        "android_client_info": {
+          "package_name": "techno.com.tynpu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968251524550-sq411fhgbori712n6r8a2c92jmsvrh8k.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "968251524550-3po5j8cum648k3mcuitc5vbo9s1224pf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "968251524550-qdq5gcdvpjjevg65lb7dndil9t1k4lim.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techno.com.tynpu",
+            "certificate_hash": "4542289dd5b8ec613dd808fa8d48b5ad936787e6"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4x7AwPhyG2RRT5p_DzSe4fY6R29dm7xw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968251524550-sq411fhgbori712n6r8a2c92jmsvrh8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

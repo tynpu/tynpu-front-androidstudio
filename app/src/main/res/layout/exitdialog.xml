@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/white_bg_curve"
+        >
+        <ImageView
+            android:id="@+id/imageDialog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:id="@+id/text_msgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="7pt"
+            android:layout_margin="5dp"
+            android:text="Are You Sure Do you Wants to Exit"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_doneexit"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+
+                android:text="Yes"
+                android:textColor="#ffffff"
+                android:background="@drawable/login_filed"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_exitcancel"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+               android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="No"
+                android:textColor="#ffffff"
+                android:background="@drawable/login_filed"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

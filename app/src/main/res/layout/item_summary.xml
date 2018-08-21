@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:id="@+id/lay_head"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#282828"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/foodcatimgsum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/base_four_img"
+                app:siBorderColor="@color/white"
+                app:siBorderWidth="3dp"
+                app:siRadius="6dp"
+                app:siSquare="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Veg Meal Thai"
+                android:id="@+id/tv_sum_item_name"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Thanks giving Dinner"
+                android:textColor="#80ffffff"
+                android:textSize="17sp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_summaryveg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Veg"
+                    android:textColor="#ff0000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_summryfood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tv_summaryveg"
+                    android:text="Food"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_head"
+        android:background="#282828"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Quantity"
+
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_summary"
+            android:text="2"
+
+            android:id="@+id/sum_combo_count"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_summary"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Sub Total"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/staticdollar"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_summary"
+            android:layout_marginTop="5dp"
+
+            android:layout_toLeftOf="@+id/tv_sumprice"
+            android:text="$/"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_sumprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_summary"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="150"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

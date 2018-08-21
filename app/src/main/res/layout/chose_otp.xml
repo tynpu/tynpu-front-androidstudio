@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/rel_logo"
+        android:layout_width="match_parent"
+
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rel_logo"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Forget Password"
+            android:textColor="#fff"
+            android:textSize="7pt"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rel_email"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/rel_tv_login"
+        android:layout_marginTop="30dp">
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/login_filed"
+            android:text="Generate OTP"
+            android:textAllCaps="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:textSize="7pt"
+            android:layout_marginRight="40dp"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_generateotp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rel_email"
+        android:id="@+id/rel_login"
+        android:layout_marginTop="30dp"
+
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/login_filed"
+            android:text="Have Already OTP Create Password"
+            android:textAllCaps="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:textSize="7pt"
+            android:layout_marginRight="40dp"
+            android:textColor="#ffffff"
+            android:id="@+id/alreadyotp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

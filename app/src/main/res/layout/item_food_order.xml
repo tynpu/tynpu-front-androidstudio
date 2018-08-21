@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="1dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_l2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/rel_main"
+        android:orientation="horizontal"
+        android:background="#3C3B3B"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/availebleproimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Image"
+                android:scaleType="fitXY"
+                android:src="@drawable/pizza_img" />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1.4"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza hut"
+                android:layout_gravity="center"
+                android:textSize="8pt"
+                android:id="@+id/available_res_name"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It is a long established fact"
+                android:layout_gravity="center"
+                android:textSize="7pt"
+                android:layout_margin="10dp"
+                android:textColor="#B8B7B7"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza hut"
+              android:layout_marginLeft="10dp"
+                android:textSize="7pt"
+                android:id="@+id/tv_available_foodname"
+
+                android:textColor="#FFFFFF"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight=".6"
+
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imglike"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/layout"
+
+
+                    />
+
+                <ImageView
+                    android:id="@+id/img_availablerestro_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imglike"
+                    android:src="@drawable/open_lat"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_availblerestro_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imglike"
+                    android:src="@drawable/closerestro"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

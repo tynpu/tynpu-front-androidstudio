@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="1dp">
+
+    <LinearLayout
+        android:id="@+id/linear_l2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3C3B3B"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_profile"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/user_profile"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/profile_img_one"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Jasmin Wood"
+                android:textColor="#ff7f1d"
+                android:id="@+id/tv_username"
+                android:textSize="9pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="San Franxisco,CA"
+                android:textColor="#ffffff"
+                android:id="@+id/tv_addcommnet"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

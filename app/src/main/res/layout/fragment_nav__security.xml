@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="techno.com.tynpu.Fragment.Nav_SecurityFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar_changepassword"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/black"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="gone"
+
+                >
+            </ProgressBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff">
+
+            <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0e0e0e"
+                android:textColor="#0e0e0e"
+                android:id="@+id/edit_currentpaswd"
+                android:hint=" Current Password"
+                android:textSize="18sp"
+                app:drawable_hide="@drawable/ic_custom_hide"
+                android:background="@android:color/transparent"
+                app:drawable_show="@drawable/ic_custom_show"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                tools:ignore="HardcodedText"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#000000" />
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff">
+
+            <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0e0e0e"
+                android:textColor="#0e0e0e"
+                android:hint="New Password"
+                android:textSize="18sp"
+                android:id="@+id/edit_newpaswd"
+                app:drawable_hide="@drawable/ic_custom_hide"
+                android:background="@android:color/transparent"
+                app:drawable_show="@drawable/ic_custom_show"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                tools:ignore="HardcodedText"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#000000" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff">
+
+            <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#0e0e0e"
+                android:textColor="#0e0e0e"
+                android:id="@+id/edit_confirmpaswd"
+                android:hint=" Confirm Password"
+                android:textSize="18sp"
+                app:drawable_hide="@drawable/ic_custom_hide"
+                android:background="@android:color/transparent"
+                app:drawable_show="@drawable/ic_custom_show"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                tools:ignore="HardcodedText"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#000000" />
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/add_btn_card_bg"
+            android:layout_above="@+id/rel_total_header"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/btn_changepassword"
+            android:text="Change Password"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="techno.com.tynpu.Activity.Location">
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#282828">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Locate me"
+            android:textColor="#fff"
+            android:textSize="8pt"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_locatted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_main"
+        android:layout_margin="20dp"
+        android:text="Where are you"
+        android:textColor="#000"
+        android:textSize="8pt" />
+
+    <RelativeLayout
+        android:id="@+id/rel_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_locatted"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/et_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"
+            android:paddingRight="20dp"
+            android:textColorHint="#504d4d"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_below="@+id/et_location"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rel_2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_rectangle"
+        android:text="Use Location"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="8pt"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_locattedd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_continue"
+        android:layout_margin="20dp"
+        android:text="Frecuently"
+        android:textColor="#000"
+        android:textSize="8pt" />
+
+    <RelativeLayout
+        android:id="@+id/rel_continue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F26721">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CONTINUE"
+            android:textColor="#fff"
+            android:textSize="8pt"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

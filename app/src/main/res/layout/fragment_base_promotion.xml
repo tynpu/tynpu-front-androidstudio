@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    tools:context="techno.com.tynpu.Fragment.BasePromotion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rel_head"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#80282828">
+
+
+                <RelativeLayout
+                    android:id="@+id/menu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/img_menu"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/left_arrow_back" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_cart"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_cart"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/cart_img" />
+
+                    <TextView
+                        android:id="@+id/item_count"
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/round_text_cart_item"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffff"
+                        android:textSize="6pt" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_base_slider"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/rel_head">
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/rounded_rec_black"
+                    android:elevation="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="$ "
+                        android:textColor="#fff"
+                        android:id="@+id/tvvv"
+                        android:textSize="7pt" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:text="8.99"
+                        android:id="@+id/tv_pro_maincouseprice"
+                        android:layout_toRightOf="@+id/tvvv"
+                        android:textColor="#fff"
+                        android:textSize="7pt" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/view_base_pro_flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:autoStart="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thai_food_img" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_hed"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_below="@+id/rel_base_slider"
+                android:background="#282828"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Veg Meal Thai Food"
+                    android:id="@+id/tv_veg_pro_subfoodname"
+                    android:textColor="#fff"
+                    android:textSize="8pt" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:text="Thanks giving Dinner Veg Food"
+                    android:textColor="#fff"
+                    android:textSize="7pt" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/linear_hed"
+                android:background="#fff" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBarbase"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/white"
+                android:indeterminateTintMode="src_atop"
+                >
+            </ProgressBar>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_bease_pro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="5dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

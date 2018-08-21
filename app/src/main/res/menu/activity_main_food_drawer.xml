@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myprofile"
+            android:icon="@drawable/nav_profile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/nav_food"
+            android:title="Food" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/nav_my_order"
+            android:title="My Order" />
+        <item
+            android:id="@+id/nav_locateme"
+            android:icon="@drawable/nav_locate_me"
+            android:title="Locate Me" />
+        <item
+            android:id="@+id/nav_msg"
+            android:icon="@drawable/nav_message"
+            android:title="messages" />
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/nav_contact_us"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/nav_favorite"
+            android:title="Favotites" />
+    </group>
+
+
+
+</menu>

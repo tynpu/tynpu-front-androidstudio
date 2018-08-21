@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationpro_base"
+        android:icon="@drawable/base_icon"
+        android:title="Base" />
+
+    <item
+        android:id="@+id/navigationpro_extra"
+        android:icon="@drawable/extra_icon"
+        android:title="Extra" />
+    <item
+        android:id="@+id/navigationpro_summary"
+        android:icon="@drawable/summry_icon"
+        android:title="Summary for Buy" />
+
+</menu>

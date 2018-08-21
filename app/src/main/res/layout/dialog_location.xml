@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#000">
+
+
+    <TextView
+        android:id="@+id/tvvvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Location Services Disable"
+        android:textColor="#fff"
+        android:textSize="7.5pt" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvvvv"
+        android:layout_marginTop="10dp"
+        android:background="#b0b0b0" />
+
+
+
+    <TextView
+        android:id="@+id/tvvsvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="10dp"
+        android:text="We need to access your location."
+        android:textColor="#fff"
+        android:textSize="7pt" />
+
+    <TextView
+        android:id="@+id/tvvsvvd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvvsvv"
+        android:layout_marginTop="10dp"
+        android:text="Please activate the location services"
+        android:textColor="#fff"
+        android:textSize="7pt" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvvsvvd"
+        android:layout_marginTop="20dp"
+        android:background="#b0b0b0" />
+
+
+    <TextView
+        android:id="@+id/tv_ignore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+        android:text="IGNORE"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:textColor="#F26721"
+
+        android:textSize="7pt" />
+
+
+
+    <TextView
+        android:id="@+id/tv_configration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_ignore"
+
+        android:text="CONFIGRATION"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="100dp"
+
+
+        android:textColor="#F26721"
+        android:textSize="7pt" />
+
+
+
+
+</RelativeLayout>
